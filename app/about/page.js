@@ -1,56 +1,38 @@
-'use client'
-
 import AboutSection from "@/components/AboutSection";
-import axios from "axios";
-import { useEffect, useState } from "react";
 
 
 async function getProjects() {
+    try {
+        const res = await fetch('https://thejus-portfolio-8wno-git-master-sirils-projects.vercel.app/api/data', { cache: 'no-store' })
+        if (!res.ok) {
+            throw new Error(`Failed to fetch projects: ${res.statusText}`);
+        }
+        const data = await res.json()
+        // console.log(data)
+        if(data){
 
-    // try {
-    //     const res = await fetch('/api/data', { cache: 'no-store' })
-    //     if (!res.ok) {
-    //         throw new Error(`Failed to fetch projects: ${res.statusText}`);
-    //     }
-    //     const data = await res.json()
-    //     // console.log(data)
-    //     if(data){
+            return "data vanoota"
+        }
+        else{
+            return "no way mone"
+        }
 
-    //         return "data vanoota  "
-    //     }
-    //     else{
-    //         return "no way mone"
-    //     }
-
-    // }
-    // catch (err) {
-    //     return "hiii"
-    // }
+    }
+    catch (err) {
+        return "hiii"
+    }
 }
 
 
-const About = () => {
+const About = async () => {
 
-    const [data,setData]= useState()
-
-    useEffect(()=>{
-        axios.get('http://127.0.0.1:3000/api/data').then(res => {
-            // console.log(res.data)
-            setData(res.data)
-        }).catch(err => {
-            return 'hiii'
-        })
-    },[])
-
-    
-    // const data= await getProjects()
+    const data= await getProjects()
     // const finddata=data[0].aboutsection
 
 
   return (
       <div className=''>
-
-    {data?<>{data[0].biography.description}</>:<>no data mone  </>}
+    {data?<>{data}</>:<>no data mone</>}
         {/* {finddata?<h1>{finddata.description}</h1>:<>no data we got</>} */}
 
         div vannille
