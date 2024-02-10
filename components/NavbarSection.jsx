@@ -9,6 +9,7 @@ import {
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 
 function NavbarSection({ scroll }) {
@@ -58,7 +59,7 @@ function NavbarSection({ scroll }) {
                 <div className="flex justify-between items-center">
 
                     <div onClick={() => { router.push('/') }} className="w-[50%] flex items-center ">
-                        <img src='/IMAges/Logo.png' alt="Logo" className="w-12 h-12 mx-4" />
+                        <Image width={12} height={12} src='/IMAges/Logo.png' alt="Logo" className=" mx-4" />
                     </div>
 
                     <div className="  md:hidden z-50 mx-4">
