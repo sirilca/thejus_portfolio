@@ -17,7 +17,7 @@ async function getProjects() {
 
   }
   catch (err) {
-    return err
+    return 'err'
   }
 }
 
@@ -25,10 +25,11 @@ async function getProjects() {
 const page = async () => {
 
   const res= await getProjects()
-  // console.log(res)
+
   const data=res[0].blogsection
+
   const journey= data.slice(1)
-  // console.log(journey)
+
 
   return (
     <div>
