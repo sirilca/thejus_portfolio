@@ -16,7 +16,7 @@ async function getProjects() {
       throw new Error(`Failed to fetch projects: ${res.statusText}`);
     }
     const data=await res.json()
-    // console.log(data)
+    console.log(data)
     return data
 
     //-------------------------------directly access from mongoose-------------------------------
@@ -32,6 +32,7 @@ async function getProjects() {
 export default async function Dashboard() {
 
   const projects = await getProjects()
+  console.log("-----------",projects);
   const herodata = await projects[0].herosection
   const biodata = await projects[0].biography
   const activity = await projects[0].activitysection
