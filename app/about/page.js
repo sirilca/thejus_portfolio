@@ -9,11 +9,17 @@ async function getProjects() {
         }
         const data = await res.json()
         // console.log(data)
-        return data
+        if(data){
+
+            return "data vanoota"
+        }
+        else{
+            return "no way mone"
+        }
 
     }
     catch (err) {
-        return err
+        return "hiii"
     }
 }
 
@@ -21,13 +27,13 @@ async function getProjects() {
 const About = async () => {
 
     const data= await getProjects()
-    const finddata=data[0].aboutsection
+    // const finddata=data[0].aboutsection
 
 
   return (
       <div className=''>
-
-        {finddata?<h1>{finddata.description}</h1>:<>no data we got</>}
+    {data?<>{data}</>:<></>}
+        {/* {finddata?<h1>{finddata.description}</h1>:<>no data we got</>} */}
 
         div vannille
         {/* <AboutSection data ={data}/> */}
