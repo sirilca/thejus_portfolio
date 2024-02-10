@@ -3,7 +3,7 @@ import AboutSection from "@/components/AboutSection";
 
 async function getProjects() {
     try {
-        const res = await fetch('https://jsonplaceholder.typicode.com/todos', { cache: 'no-store' })
+        const res = await fetch('http://127.0.0.1:3000/api/data', { cache: 'no-store' })
         if (!res.ok) {
             throw new Error(`Failed to fetch projects: ${res.statusText}`);
         }
@@ -11,7 +11,7 @@ async function getProjects() {
         // console.log(data)
         if(data){
 
-            return "data vanoota"
+            return "data vanoota  "
         }
         else{
             return "no way mone"
