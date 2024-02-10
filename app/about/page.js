@@ -35,7 +35,7 @@ const About = async () => {
         {/* {data?<>{data}</>:<>no data mone</>} */}
         {/* {finddata?<h1>{finddata.description}</h1>:<>no data we got</>} */}
 
-        div vannille
+        {/* div vannille */}
         <AboutSection data ={finddata}/>
       </div>
   )
