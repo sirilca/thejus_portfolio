@@ -34,7 +34,7 @@ const About = () => {
     const [data,setData]= useState()
 
     useEffect(()=>{
-        axios.get('http://localhost:3000/api/data').then(res => {
+        axios.get('http://127.0.0.1:3000/api/data').then(res => {
             // console.log(res.data)
             setData(res.data)
         }).catch(err => {
@@ -49,7 +49,7 @@ const About = () => {
 
   return (
       <div className=''>
-        
+
     {data?<>{data[0].biography.description}</>:<>no data mone  </>}
         {/* {finddata?<h1>{finddata.description}</h1>:<>no data we got</>} */}
 
