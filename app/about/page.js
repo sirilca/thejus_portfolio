@@ -27,16 +27,16 @@ async function getProjects() {
 const About = async () => {
 
     const data= await getProjects()
-    const finddata = data[0].biography
+    const finddata = data[0].aboutsection
 
 
   return (
       <div className=''>
         {/* {data?<>{data}</>:<>no data mone</>} */}
-        {finddata?<h1>{finddata.description}</h1>:<>no data we got</>}
+        {/* {finddata?<h1>{finddata.description}</h1>:<>no data we got</>} */}
 
         div vannille
-        {/* <AboutSection data ={data}/> */}
+        <AboutSection data ={finddata}/>
       </div>
   )
 }
