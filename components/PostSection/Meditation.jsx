@@ -2,7 +2,7 @@ import React from 'react'
 
 const Meditation = ({journeys}) => {
 
-
+    
 
 
     // const journeys = [
