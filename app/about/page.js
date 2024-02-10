@@ -25,7 +25,8 @@ const About = async () => {
 
   return (
       <div className=''>
-        <AboutSection data ={data}/>
+        {data?<h1>{data.description}</h1>:<>no data we got</>}
+        {/* <AboutSection data ={data}/> */}
       </div>
   )
 }
