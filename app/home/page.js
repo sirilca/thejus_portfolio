@@ -13,9 +13,8 @@ async function getProjects() {
     if (!res.ok) {
       throw new Error(`Failed to fetch projects: ${res.statusText}`);
     }
-    const data=await res.json()
-    console.log(data)
-    return data
+    // console.log(res.json())
+    return res.json()
 
     //-------------------------------directly access from mongoose-------------------------------
     // const data = await DataModel.find()

@@ -32,7 +32,7 @@ const page = async () => {
 
   return (
     <div>
-      <input type="checkbox" value="dark" className="toggle theme-controller" />
+      {/* <input type="checkbox" value="dark" className="toggle theme-controller" /> */}
 
       <PostSection data={data}/> 
       <Meditation journeys={journey}/>
