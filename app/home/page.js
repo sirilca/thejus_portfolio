@@ -32,10 +32,10 @@ async function getProjects() {
 export default async function Dashboard() {
 
   const projects = await getProjects()
-  const herodata = projects[0].herosection
-  const biodata = projects[0].biography
-  const activity = projects[0].activitysection
-  const blogdata = projects[0].blogsection
+  const herodata = await projects[0].herosection
+  const biodata = await projects[0].biography
+  const activity = await projects[0].activitysection
+  const blogdata = await projects[0].blogsection
 
   // console.log(blogdata)
 
