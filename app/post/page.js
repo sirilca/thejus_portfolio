@@ -12,7 +12,7 @@ async function getProjects() {
     }
     return res.json()
     const data = await res.json()
-    console.log(data)
+    // console.log(data)
     return data[0].blogsection
 
   }
@@ -25,10 +25,10 @@ async function getProjects() {
 const page = async () => {
 
   const res= await getProjects()
-  console.log(res)
+  // console.log(res)
   const data=res[0].blogsection
   const journey= data.slice(1)
-  console.log(journey)
+  // console.log(journey)
 
   return (
     <div>
