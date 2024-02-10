@@ -1,8 +1,6 @@
 // import DataModel from "@/models/mongo"
 // import Home from "./home/page"
-import { redirect } from "next/navigation"
 import HeroSection from "@/components/HeroSection"
-import NavbarSection from "@/components/NavbarSection"
 import Biography from "@/components/BioSection/Biography"
 import ActivitySection from "@/components/ActivitySection"
 import BlogSection from "@/components/BlogSection"
@@ -33,18 +31,11 @@ export default async function Dashboard() {
 
   const projects = await getProjects()
   console.log("-----------",projects);
-  const herodata = await projects[0].herosection
   const biodata = await projects[0].biography
+  const herodata = await projects[0].herosection
   const activity = await projects[0].activitysection
   const blogdata = await projects[0].blogsection
 
-  // console.log(blogdata)
-
-
-  // console.log(biodata)
-  // const data=projects[0]
-  // const sdata=data.herosection
-  // console.log(projects[0].aboutsection);
 
   return (
     <div >

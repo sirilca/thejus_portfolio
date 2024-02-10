@@ -10,6 +10,7 @@ async function getProjects() {
     if (!res.ok) {
       throw new Error(`Failed to fetch projects: ${res.statusText}`);
     }
+    return res.json()
     const data = await res.json()
     console.log(data)
     return data[0].blogsection
@@ -23,14 +24,17 @@ async function getProjects() {
 
 const page = async () => {
 
-  const data= await getProjects()
-  const journey=await data.slice(1)
+  const res= await getProjects()
+  console.log(res)
+  const data=res[0].blogsection
+  const journey= data.slice(1)
   console.log(journey)
+
   return (
     <div>
-      {/* <input type="checkbox" value="dark" className="toggle theme-controller" /> */}
+      <input type="checkbox" value="dark" className="toggle theme-controller" />
 
-      <PostSection data={data}/>
+      <PostSection data={data}/> 
       <Meditation journeys={journey}/>
 
     </div>
