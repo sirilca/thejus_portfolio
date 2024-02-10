@@ -9,7 +9,7 @@ import BlogSection from "@/components/BlogSection"
 
 async function getProjects() {
   try {
-    const res = await fetch('http://localhost:3000/api/data', { cache: 'no-store' })
+    const res = await fetch('https://thejus-portfolio-8wno-git-master-sirils-projects.vercel.app/api/data', { cache: 'no-store' })
     if (!res.ok) {
       throw new Error(`Failed to fetch projects: ${res.statusText}`);
     }
@@ -22,14 +22,14 @@ async function getProjects() {
 
   }
   catch (err) {
-    return err
+    return "hiii"
   }
 }
 
 export default async function Dashboard() {
 
   const projects = await getProjects()
-  console.log("-----------",projects);
+  // console.log("-----------",projects);
   const biodata = await projects[0].biography
   const herodata = await projects[0].herosection
   const activity = await projects[0].activitysection
