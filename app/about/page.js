@@ -26,6 +26,7 @@ const About = async () => {
   return (
       <div className=''>
         {data?<h1>{data.description}</h1>:<>no data we got</>}
+        div vannille
         {/* <AboutSection data ={data}/> */}
       </div>
   )
