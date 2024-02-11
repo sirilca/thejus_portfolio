@@ -3,6 +3,8 @@ import { NextResponse } from "next/server";
 
 const DURL ='https://jsonplaceholder.typicode.com/todos'
 
+export const revalidate = 0;
+
 export async function GET(){
 
     try{
