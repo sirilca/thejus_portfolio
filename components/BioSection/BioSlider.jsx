@@ -62,19 +62,19 @@ const BioSlider =  ({items}) => {
               <div className="absolute w-[95%] top-1/3 left-0 right-0 m-auto border-t border-zinc-300 sm:block hidden" />
               <hr className="absolute w-[95%] top-2/3 left-0 right-0 m-auto border- border-zinc-300 sm:block hidden" />
 
-              <div className="sm:px-2 overflow-hidden md:w-[100%]  w-[90vw] lg:w-[80vh] sm:h-[90vh]   md:bg-[#beada23d]  bg-[#867e7943]
-             
+              <div className="sm:px-2 overflow-hidden md:w-[100%]  w-[90vw] lg:w-[80vh] sm:h-[90vh]   md:bg-[#beada23d]  bg-[#867e791e]
+             rounded-xl
               " >
 
                   <Slider className=" h-[100%] w-full overflow-hidden" {...settings}>
                       {items.map((item, index) => (
                           <div key={index}>
                               <div className="flex sm:flex-row flex-col items-center md:justify-around justify-between sm:p-5  p-0  
-                              lg:h-[30vh] sm:h-[30vh] md:h-[30vh] w-full  min-h-[60vh] sm:min-h-[30vh]
+                              lg:h-[30vh] sm:h-[30vh] md:h-[30vh] w-full  min-h-[60vh] sm:min-h-[30vh] 
 
                               ">
                                   
-                                  <div  className="overflow-hidden relative m-5 sm:w-[25vh] sm:h-[15vh] h-[30vh] w-[95%]">
+                                  <div  className="overflow-hidden relative m-5 sm:w-[25vh] sm:h-[15vh] h-[30vh] w-[95%] rounded-md">
                                       <img className="w-full h-full object-cover object-center " src={item.image} alt="" />
                                   </div>
 

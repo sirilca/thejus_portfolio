@@ -15,29 +15,34 @@ async function AboutSection({data}) {
 
                     <img src='/IMAges/about.png' alt="About Me Image" className="sm:w-full " />
 
-                    <p className="text-justify">{data.description}</p>
+                    <p className="text-justify font-medium text-lg">{data.description}</p>
 
                     {/* Responsive layout for small screens */}
-                    <div className="hidden sm:flex items-center flex-col gap-10 justify-center">
+                    <div className="hidden items-center flex-col gap-10 justify-center">
                         {timedata?.map((e, i) => (
                             <div key={i} className="flex items-center gap-10 justify-between">
-                                <div className="w-3/12">
+                                {/* hidden because client dont need these  things says so */}
+                                <div className="w-3/12 hidden"> 
                                     <div className="text-xl font-semibold my-3">{e.date}</div>
                                     <div className="text-lg font-medium">{e.designation}</div>
                                     <div className="text-sm">{e.company}</div>
                                 </div>
-                                <div className="w-8/12 text-justify">{e.content}</div>
+                                <div className="w-full text-justify">{e.content}</div>
                             </div>
                         ))}
                     </div>
 
                     {/* Responsive layout for mobile screens */}
-                    <div className="sm:hidden">
+                    <div className="hidden">
                         {timedata?.map((e, i) => (
                             <div key={i} className="flex flex-col items-center gap-4 m-4">
+                                {/* client said to hide this */}
+                                <div className="hidden">
+
                                 <div className="text-xl font-semibold my-3">{e.date}</div>
                                 <div className="text-lg font-medium">{e.designation}</div>
                                 <div className="text-sm">{e.company}</div>
+                                </div>
                                 <div className="text-justify">{e.content}</div>
                             </div>
                         ))}
