@@ -9,7 +9,7 @@ function HeroSection({ data }) {
     return (
         <div id='homeid'>
             {/* -----------------------remove if not wanted----------------------------------- */}
-            <div className="relative w-[100%] h-64 overflow-hidden sm:hidden">
+            <div className="relative w-[100%]  overflow-hidden sm:hidden">
                 <Image width={200} height={96}  src="/IMAges/photo.png" alt="Your Image" className="w-full h-full object-cover rounded-lg" />
                 <div className="absolute inset-x-0 top-0 bottom-0 bg-[#f5f6f0] opacity-50 mix-blend-multiply"></div>
             </div>

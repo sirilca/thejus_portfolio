@@ -70,7 +70,7 @@ const BioSlider =  ({items}) => {
                       {items.map((item, index) => (
                           <div key={index}>
                               <div className="flex sm:flex-row flex-col items-center md:justify-around justify-between sm:p-5  p-0  
-                              lg:h-[30vh] sm:h-[30vh] md:h-[30vh] w-full  min-h-[80vh] sm:min-h-[30vh]
+                              lg:h-[30vh] sm:h-[30vh] md:h-[30vh] w-full  min-h-[60vh] sm:min-h-[30vh]
 
                               ">
                                   

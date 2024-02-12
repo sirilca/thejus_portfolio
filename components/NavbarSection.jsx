@@ -58,8 +58,8 @@ function NavbarSection({ scroll }) {
 
                 <div className="flex justify-between items-center">
 
-                    <div onClick={() => { router.push('/') }} className="w-[50%] flex items-center ">
-                        <Image width={12} height={12} src='/IMAges/Logo.png' alt="Logo" className=" mx-4" />
+                    <div onClick={() => { router.push('/') }} className="w-[50%] flex items-center sm:h-auto h-20">
+                        <Image width={12} height={12} src='/IMAges/Logo.png' alt="Logo" className=" mx-4 sm:h-auto h-12 w-12" />
                     </div>
 
                     <div className="  md:hidden z-50 mx-4">
