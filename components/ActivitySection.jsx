@@ -6,25 +6,25 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function ActivitySection({ ActivitiesRef }) {
+function ActivitySection({ data }) {
 
 
 
 
-    const data = [
-        {
-            link: 'https://example.com/activity1-info',
-            img: 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Anatomy_of_a_Sunset-2.jpg',
-            content: 'ChatGPT conducts a workshop on AI and NLP.',
-            _id: '65c61d44c3507433bc990662'
-        },
-        {
-            link: 'https://example.com/activity2-info',
-            img: 'http://res.cloudinary.com/dqvoeibjd/image/upload/v1707120668/nsko0pmoby303pgcedmb.png',
-            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Dignissimos fuga quam ab vel, repellendus non magnam, quaerat culpa maiores, harum praesentium molestiae doloremque? Tempora aliquid dolorem voluptates facilis quae minima.o? Fugiat iste aliquam cumque eligendi! Repudiandae aut nihil voluptates labore! Nisi quos explicabo velit nesciunt, eligendi eius exercitationem! Nihil, perspiciatis.Omnis quia sunt, a temporibus consectetur quos dicta?Nulla necessitatibus voluptatem ad eius libero placeat eos maiores repellat rerum doloremque, mollitia quam dolores error repudiandae autem neque iste incidunt dolore rem.Ad sunt voluptas asperiores deserunt, hic atque!Magni fugit possimus quia architecto repudiandae nihil dicta itaque vitae reprehenderit quod iste adipisci voluptas quidem expedita temporibus unde, atque non.Asperiores eveniet consequatur accusantium quam eligendi non reiciendis voluptatum?Repellat, illo provident? Distinctio et id vel assumenda harum odio atque amet, incidunt deserunt minus nemo facilis? Consectetur dolor suscipit et sit quisquam adipisci, aperiam voluptatibus maiores odio est impedit.',  
-            _id: '65c61d44c3507433bc990663'
-        }
-    ]
+    // const data = [
+    //     {
+    //         link: 'https://example.com/activity1-info',
+    //         img: 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Anatomy_of_a_Sunset-2.jpg',
+    //         content: 'ChatGPT conducts a workshop on AI and NLP.',
+    //         _id: '65c61d44c3507433bc990662'
+    //     },
+    //     {
+    //         link: 'https://example.com/activity2-info',
+    //         img: 'http://res.cloudinary.com/dqvoeibjd/image/upload/v1707120668/nsko0pmoby303pgcedmb.png',
+    //         content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Dignissimos fuga quam ab vel, repellendus non magnam, quaerat culpa maiores, harum praesentium molestiae doloremque? Tempora aliquid dolorem voluptates facilis quae minima.o? Fugiat iste aliquam cumque eligendi! Repudiandae aut nihil voluptates labore! Nisi quos explicabo velit nesciunt, eligendi eius exercitationem! Nihil, perspiciatis.Omnis quia sunt, a temporibus consectetur quos dicta?Nulla necessitatibus voluptatem ad eius libero placeat eos maiores repellat rerum doloremque, mollitia quam dolores error repudiandae autem neque iste incidunt dolore rem.Ad sunt voluptas asperiores deserunt, hic atque!Magni fugit possimus quia architecto repudiandae nihil dicta itaque vitae reprehenderit quod iste adipisci voluptas quidem expedita temporibus unde, atque non.Asperiores eveniet consequatur accusantium quam eligendi non reiciendis voluptatum?Repellat, illo provident? Distinctio et id vel assumenda harum odio atque amet, incidunt deserunt minus nemo facilis? Consectetur dolor suscipit et sit quisquam adipisci, aperiam voluptatibus maiores odio est impedit.',  
+    //         _id: '65c61d44c3507433bc990663'
+    //     }
+    // ]
 
 
     const sliderRef = useRef(null);
@@ -85,7 +85,7 @@ function ActivitySection({ ActivitiesRef }) {
                         Activities
                     </div>
 
-                    <div ref={ActivitiesRef} className="flex flex-col md:flex-row w-full md:my-0 my-16 items-center justify-evenly bg-blue-00 " >
+                    <div className="flex flex-col md:flex-row w-full md:my-0 my-16 items-center justify-evenly bg-blue-00 " >
 
 
 
