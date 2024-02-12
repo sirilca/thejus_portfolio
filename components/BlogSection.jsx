@@ -53,17 +53,19 @@ function BlogSection({ data }) {
                                 alt=""
                             />
                         </div>
+
+                      
                         <div className="flex items-center justify-start w-full">
                             <div className="py-4 sm:p-10">
                                 <div className="mx-4">
                                     {items.tag}
                                     <div className="w-6 h-0.5 bg-[#FF6D00]"></div>
-                                    <div className="text-sm py-2"></div>
+                                    <div className="text-sm py-1"></div>
                                 </div>
-                                <div className="font-semibold px-4 py-2 text-xl">
+                                <div className="font-semibold px-4 md:py-0 py-4 text-xl">
                                     {items.title}
                                 </div>
-                                <div className="text-sm px-4 py-2">
+                                <div className="text-sm px-4 md:py-1 py-4">
                                     {new Date(items.date)
                                         .toJSON()
                                         .slice(0, 10)
