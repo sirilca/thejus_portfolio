@@ -13,7 +13,7 @@ async function AboutSection({data}) {
                     <div className="text-4xl font-medium text-start w-full sm:text-center">About me</div>
 
 
-                    <img src='/IMAges/about.png' alt="About Me Image" className="sm:w-full " />
+                    <img src='/IMAges/about.png' alt="AboutMeImage" className="sm:w-full " />
 
                     <p className="text-justify font-medium text-lg">{data.description}</p>
 

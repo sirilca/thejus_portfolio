@@ -32,7 +32,7 @@ function NavbarSection({ scroll }) {
 
             <div className="md:flex justify-around hidden bg-[#f5f6f0] h-20 ">
                 <div onClick={() => { router.push('/') }} className="w-[65%] flex items-center">
-                    <img src='/IMAges/Logo.png' alt="Logo" className="w-12 h-12 mx-8" />
+                    <Image width={20} height={20} src='/IMAges/Logo.png' alt="Logo" className="w-12 h-12 mx-8" />
                 </div>
                 <div className="flex justify-around items-center gap-2  w-[35%] mr-2">
                     <Link href='/home' className="text-black font-outfit hover:text-gray-600 cursor-pointer" onClick={() => { scroll('homeid') }} >
@@ -53,13 +53,13 @@ function NavbarSection({ scroll }) {
                 </div>
             </div>
 
-
-            <div className="md:hidden max-w-[100%] py-8 bg-[#f5f6f0] ">
+{/* mobile screen */}
+            <div className="md:hidden max-w-[100%] py-4 bg-[#f5f6f0] ">
 
                 <div className="flex justify-between items-center">
 
                     <div onClick={() => { router.push('/') }} className="w-[50%] flex items-center sm:h-auto h-20">
-                        <Image width={12} height={12} src='/IMAges/Logo.png' alt="Logo" className=" mx-4 sm:h-auto h-12 w-12" />
+                        <Image width={120} height={120} src='/IMAges/Logo.png' alt="Logo" className=" mx-4 sm:h-auto h-12 w-12" />
                     </div>
 
                     <div className="  md:hidden z-50 mx-4">

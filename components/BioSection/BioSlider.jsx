@@ -71,18 +71,17 @@ const BioSlider =  ({items}) => {
                           <div key={index}>
                               <div className="flex sm:flex-row flex-col items-center md:justify-around justify-between sm:p-5  p-0  
                               lg:h-[30vh] sm:h-[30vh] md:h-[30vh] w-full  min-h-[60vh] sm:min-h-[30vh] 
-
                               ">
                                   
-                                  <div  className="overflow-hidden relative m-5 sm:w-[25vh] sm:h-[15vh] h-[30vh] w-[95%] rounded-md">
-                                      <img className="w-full h-full object-cover object-center " src={item.image} alt="" />
+                                  <div  className="overflow-hidden relative m-2 sm:w-[25vh] sm:h-[15vh] h-[30vh] w-[95%] rounded-md">
+                                      <img className="w-full h-full object-cover object-center " src={item.image} alt="No image" />
                                   </div>
 
                                   <div className="sm:w-2/4  sm:max-h-48 text-sm text-start overflow-hidden
-                                     w-[95%]
+                                     w-[95%] m-2
                                     ">{item.description}</div>
 
-                                  <a href={item.link} target="_blank" className='sm:mb-0 mb-8'>
+                                  <a href={item.link} target="_blank" className='sm:m-2 mt-8 mb-2'>
                                       <div className="rounded-full p-2 border-2 border-[#fc9351] ">
                                           <GoArrowUpRight color="#fc9351" size={20} />
                                       </div>
@@ -91,6 +90,7 @@ const BioSlider =  ({items}) => {
 
                           </div>
                       ))}
+
                   </Slider>
               </div>
           </div>

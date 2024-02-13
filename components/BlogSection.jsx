@@ -50,7 +50,7 @@ function BlogSection({ data }) {
                             <img
                                 className="w-full h-full  object-cover object-center rounded-xl"
                                 src={items.img}
-                                alt=""
+                                alt="NO image"
                             />
                         </div>
 

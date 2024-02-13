@@ -128,7 +128,7 @@ function ActivitySection({ data }) {
                                                             // style={{ height: "28vh", width: "50vh" }}
                                                             className="sm:h-[35vh] w-[50vh] h-[30vh] "
                                                             src={e.img}
-                                                            alt=""
+                                                            alt="NO image"
                                                         />
                                                     </div>
                                                 </div>
